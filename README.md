@@ -10,6 +10,7 @@ Founder & Principal Researcher at **[Plainsight Systems](https://github.com/plai
 - **Governed AI platforms** — LLM gateways, agent frameworks, retrieval/RAG, and evaluation infrastructure, written and run in production.
 
 **Selected work**
+- **[Seymour](https://github.com/plainsight-systems/seymour)** — an interactive tour of why LLM inference spends its time waiting on memory: GPU cutaways, a stage-by-stage forward pass, and serving challenges on NVIDIA and AMD accelerators, all driven by one deterministic roofline model. *([live demo](https://plainsight-systems.github.io/seymour/))*
 - **[cpp-perf-guidelines](https://github.com/plainsight-systems/cpp-perf-guidelines)** — a low-level C++ performance-guidelines corpus, with external adoption.
 - **Rust MCP servers** (Redis, LanceDB vector search) — in the [Plainsight Systems org](https://github.com/plainsight-systems).
 - **[NeuralAscent](https://github.com/AndrewPHunter/NeuralAscent)** — the arc from Rosenblatt's Perceptron (1957) to Vaswani's Transformer (2017), implemented in C# with no ML framework.
