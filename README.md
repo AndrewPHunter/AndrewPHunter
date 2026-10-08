@@ -11,7 +11,7 @@ Founder and principal researcher at **[Plainsight Systems](https://github.com/pl
 - **Rust MCP servers** (Redis, LanceDB vector search) in the [Plainsight Systems org](https://github.com/plainsight-systems).
 
 **Currently**
-- **Research ([Ariadne](https://github.com/plainsight-systems/ariadne)):** whether a transformer's vocabulary size and embedding dimension can be derived instead of tuned. Working towards an information-theoretic approach to attention.
+- **Research ([Ariadne](https://github.com/plainsight-systems/ariadne)):** working towards an information-theoretic approach to attention and beyond.
 - **On-device inference:** hand-rolled C++ harnesses on the silicon they run on, no ML frameworks in the hot path. Air-gapped mixture-of-experts inference at about 80 to 90 tok/s on Apple Silicon (M3); AMD Strix Halo under research.
 - **Next:** a real-time path tracer whose sampling kernels share a shape with attention, and an article series that builds a transformer from an empty program in C#.
 - **Governed AI platforms:** LLM gateways, agent frameworks, retrieval and evaluation infrastructure, written and run in production.
