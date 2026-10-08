@@ -12,8 +12,9 @@ Founder and principal researcher at **[Plainsight Systems](https://github.com/pl
 
 **Currently**
 - **Research ([Ariadne](https://github.com/plainsight-systems/ariadne)):** working towards an information-theoretic approach to attention and beyond.
+- **Building ([Serenity](https://github.com/plainsight-systems/serenity)):** a real-time path tracer in C++ on Metal 4 for one scene lit by thousands of moving fireflies. A frame has a 16 ms deadline, and making it means the same streaming, small-state problems I work on in inference, met from the other side. Early: no frames yet.
 - **On-device inference:** hand-rolled C++ harnesses on the silicon they run on, no ML frameworks in the hot path. Air-gapped mixture-of-experts inference at about 80 to 90 tok/s on Apple Silicon (M3); AMD Strix Halo under research.
-- **Next:** a real-time path tracer whose sampling kernels share a shape with attention, and an article series that builds a transformer from an empty program in C#.
+- **Next:** an article series that builds a transformer from an empty program in C#.
 - **Governed AI platforms:** LLM gateways, agent frameworks, retrieval and evaluation infrastructure, written and run in production.
 
 **Elsewhere**
