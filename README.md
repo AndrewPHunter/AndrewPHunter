@@ -6,13 +6,15 @@ Founder and principal researcher at **[Plainsight Systems](https://github.com/pl
 
 **Selected work**
 - **[Charlotte](https://github.com/plainsight-systems/charlotte)**: an LLM inference harness that runs open-weight models entirely in the browser. C++ compiled to WebAssembly, every step on the GPU through WebGPU; Qwen3 0.6B decodes at 270 tok/s in Chrome on an M3 Max. *([live demo](https://plainsight-systems.github.io/charlotte/) · [debrief](https://github.com/plainsight-systems/charlotte/blob/main/docs/debrief.md))*
-- **[Serenity](https://github.com/plainsight-systems/serenity)**: a real-time path tracer in C++ on Metal 4 for one scene lit by thousands of moving fireflies. A frame has a 16 ms deadline, and making it means the same streaming, small-state problems I work on in inference, met from the other side. First lit frame on day one: a brass sphere on a checkerboard at night, lit by two fireflies, a nod to Turner Whitted's 1980 spheres.
+- **[Serenity](https://serenity.plainsight-systems.com/)**: a real-time path tracer in C++ on Metal 4 for one scene lit by thousands of moving fireflies. A frame has a 16 ms deadline, and making it means the same streaming, small-state problems I work on in inference, met from the other side. First lit frame on day one: a brass sphere on a checkerboard at night, lit by two fireflies, a nod to Turner Whitted's 1980 spheres.
+- **[Ariadne](https://github.com/plainsight-systems/ariadne)**: research into how much of a message a finite receiver can use, working toward an information-theoretic approach to attention and beyond.
+- **[Cradle](https://cradle.plainsight-systems.com/)**: *Let's Build a Transformer!*, an article series building a transformer inference engine in C# from an empty program. Inspired by Jack Crenshaw, each lesson adds a working piece, including the GPU kernels, with the math introduced as we need it.
 - **[cpp-perf-guidelines](https://github.com/plainsight-systems/cpp-perf-guidelines)**: low-level C++ performance guidelines served to coding agents over MCP, 157 guidelines across 13 categories, with external adoption.
 
 **Currently**
 - **Research ([Ariadne](https://github.com/plainsight-systems/ariadne)):** working towards an information-theoretic approach to attention and beyond.
 - **On-device inference:** hand-rolled C++ harnesses on the silicon they run on, no ML frameworks in the hot path. Air-gapped mixture-of-experts inference at about 80 to 90 tok/s on Apple Silicon (M3); AMD Strix Halo under research.
-- **Next:** an article series that builds a transformer from an empty program in C#.
+- **Writing ([Cradle](https://cradle.plainsight-systems.com/)):** the prologue is published; next comes our first GPU kernel.
 - **Governed AI platforms:** LLM gateways, agent frameworks, retrieval and evaluation infrastructure, written and run in production.
 
 **Elsewhere**
