@@ -1,21 +1,29 @@
-### Andrew P Hunter
+# Andrew Hunter
 
-I'm a systems architect and builder working where applied AI meets low-level systems: LLM inference, GPU kernels and C++ performance, with governed AI platforms on top. I write the code: C++, Rust, Python, TypeScript, C#.
+I'm a systems architect, engineering leader, and builder. I've led engineering teams and platform transformations in payments and telecom, and I build the AI platforms, agent workflows, and software that go with that work. Before software became my full-time career, I served in Navy nuclear operations, where I also wrote C++ tools for reactor plant chemistry and training.
 
-Founder and principal researcher at **[Plainsight Systems](https://github.com/plainsight-systems)**, an independent research vehicle for edge-native and on-device AI.
+I run **[Plainsight Systems](https://plainsight-systems.com/)** to work through questions that interest me. How does a model's internal computation become the words we read? What changes when we design for the hardware actually running it? Those questions take me through inference engines, interpretability experiments, GPU rendering, and information theory. I write up the reasoning alongside the code so other people can follow the work.
 
-**Selected work**
-- **[Charlotte](https://github.com/plainsight-systems/charlotte)**: an LLM inference harness that runs open-weight models entirely in the browser. C++ compiled to WebAssembly, every step on the GPU through WebGPU; Qwen3 0.6B decodes at 270 tok/s in Chrome on an M3 Max. *([live demo](https://plainsight-systems.github.io/charlotte/) · [debrief](https://github.com/plainsight-systems/charlotte/blob/main/docs/debrief.md))*
-- **[Serenity](https://serenity.plainsight-systems.com/)**: a real-time path tracer in C++ on Metal 4 for one scene lit by thousands of moving fireflies. A frame has a 16 ms deadline, and making it means the same streaming, small-state problems I work on in inference, met from the other side. First lit frame on day one: a brass sphere on a checkerboard at night, lit by two fireflies, a nod to Turner Whitted's 1980 spheres.
-- **[Ariadne](https://github.com/plainsight-systems/ariadne)**: research into how much of a message a finite receiver can use, working toward an information-theoretic approach to attention and beyond.
-- **[Cradle](https://cradle.plainsight-systems.com/)**: *Let's Build a Transformer!*, an article series building a transformer inference engine in C# from an empty program. Inspired by Jack Crenshaw, each lesson adds a working piece, including the GPU kernels, with the math introduced as we need it.
-- **[cpp-perf-guidelines](https://github.com/plainsight-systems/cpp-perf-guidelines)**: low-level C++ performance guidelines served to coding agents over MCP, 157 guidelines across 13 categories, with external adoption.
+## Things to explore
 
-**Currently**
-- **Research ([Ariadne](https://github.com/plainsight-systems/ariadne)):** working towards an information-theoretic approach to attention and beyond.
-- **On-device inference:** hand-rolled C++ harnesses on the silicon they run on, no ML frameworks in the hot path. Air-gapped mixture-of-experts inference at about 80 to 90 tok/s on Apple Silicon (M3); AMD Strix Halo under research.
-- **Writing ([Cradle](https://cradle.plainsight-systems.com/)):** the prologue is published; next comes our first GPU kernel.
-- **Governed AI platforms:** LLM gateways, agent frameworks, retrieval and evaluation infrastructure, written and run in production.
+- **[Frizzle](https://frizzle.plainsight-systems.com/)** lets you reach inside a running language model. Pin neurons, change their values, and compare the reply with the one it would have written. Gemma 3 1B runs entirely in your browser, with React and TypeScript over a C++/WebAssembly engine using WebGPU. [Code](https://github.com/plainsight-systems/frizzle).
 
-**Elsewhere**
-[andrewphunter.com](https://andrewphunter.com) · [LinkedIn](https://www.linkedin.com/in/andrewphunter) · [ORCID](https://orcid.org/0009-0005-7613-8019) · [Plainsight Systems](https://github.com/plainsight-systems)
+- **[AI on AWS](https://github.com/AndrewPHunter/ai-on-aws)** is a runnable local reference application for understanding agents as part of a larger system. It covers tool calls, retrieval, delegated authority, evaluation, and failure recovery, with write-ups explaining the decisions. I use it as a teaching reference with engineers at Consumer Cellular.
+
+- **[Dolittle](https://dolittle.plainsight-systems.com/)** explores natural language descriptions of a model's internal activations. Read an interpretation, edit it, and compare what Qwen3 8B generates with and without the intervention. The C++ engine runs on CUDA and Metal. [Code](https://github.com/plainsight-systems/dolittle).
+
+- **[Charlotte](https://charlotte.plainsight-systems.com/)** is an LLM inference engine for the browser, built in C++ and WebGPU. It is where I work through the machinery of inference, from loading quantized weights to GPU kernels and streaming generation. Its engine also provided Frizzle's starting point. [Code](https://github.com/plainsight-systems/charlotte).
+
+- **[Serenity](https://serenity.plainsight-systems.com/)** approaches GPU performance through rendering, investigating techniques that also matter to inference. The path tracer gives that work a visible result, with implementations for NVIDIA GPUs and Apple Silicon and measured accounts of what helped, what didn't, and why. [Code](https://github.com/plainsight-systems/serenity).
+
+- **[Ariadne](https://github.com/plainsight-systems/ariadne)** studies what finite receivers can represent and use. It brings information theory, geometry, and computational limits together to investigate the foundations of attention and inference, through mathematical work and experiments.
+
+## Writing and teaching
+
+- **[Let's Build a Transformer!](https://cradle.plainsight-systems.com/)** grows a transformer inference engine from an empty C# program, including the GPU kernels. Each lesson adds something that runs, with the math introduced when we need it.
+- **[Architecting with Claude](https://advisory.andrewphunter.com/resources/architecting-with-claude/)** is my workshop series on planning, architecture, testing, and engineering judgment when working with coding agents. I've used it with teams at Consumer Cellular.
+- **[Transformation Under Scale](https://andrewphunter.com/series/transformation-under-scale/)** and **[Governance Under Scale](https://andrewphunter.com/series/governance-under-scale/)** cover the organizational side: understanding an existing estate, sequencing change, and making governance useful to delivery.
+
+## Elsewhere
+
+[Personal site](https://andrewphunter.com/) · [Plainsight Systems](https://plainsight-systems.com/) · [Project repositories](https://github.com/plainsight-systems) · [LinkedIn](https://www.linkedin.com/in/andrewphunter/) · [ORCID](https://orcid.org/0009-0005-7613-8019)
